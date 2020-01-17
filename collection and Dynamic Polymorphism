@@ -1,0 +1,39 @@
+package com.cts.DynamicPoly;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class NewCollection {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		List l = new ArrayList<>();
+		
+		l.add(new Dog());
+		l.add(new Cat());
+		l.add(new Cow());
+		for(Object kk : l) {
+			
+			if(kk  instanceof Dog) {
+				Dog d =(Dog)kk;
+				d.Bark();
+			}
+			else if(kk instanceof Cat) {
+				
+				Cat c = (Cat)kk;
+				c.Meow();
+			}
+			else{
+				Cow ss = (Cow)kk;
+				ss.Lazy();
+				
+			}
+			
+			
+		}
+		
+		
+	}
+
+}
