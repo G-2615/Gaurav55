@@ -1,0 +1,38 @@
+/* Dynamic Polymorphism
+ @author Gaurav Bhardwaj 
+20-01-20 */
+
+package com.cts.DynamicPoly;
+
+
+public class TestDp {
+	public static void main(String args[]) {
+		
+	Employee e = new Employee();
+	e.work();
+	e= new Admin (); //upward Casting
+	
+	Admin ad  = (Admin)e;// Downward Casting
+		ad = (Admin)e;
+	if(e instanceof Admin ) {
+		//Admin a = (Admin) e;
+		//a.Inventory();
+		e= new Admin();
+		Admin ad = new Admin();
+		ad.Inventory();
+	}
+	else if (e instanceof Manager) {
+		 //e= new Manager();
+		 //Manager m = new Manager();
+	}
+	else
+	{
+		e= new Trainer();
+		Trainer t = new Trainer();
+		t.UpSkill();
+	}
+		//e.work();
+		
+	}
+
+}
