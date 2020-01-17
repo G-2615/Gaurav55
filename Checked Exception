@@ -1,0 +1,30 @@
+/* Checked Exception */
+import  java.io.FileInputStream;
+
+//java.io.BufferedReader;
+ 
+import java.io.FileNotFoundException;
+//java.io.InputStream;
+
+public class DemoColl {
+		public static void main (String [] args)
+		{
+			FileInputStream fs = null;
+			try{
+				
+				fs = new FileInputStream("a.txt");
+				fs.read();
+				
+				
+				
+			}
+			catch(FileNotFoundException e){
+				
+				System.out.println("Location Not Found");
+			}
+			catch(Exception r)
+			{
+				System.out.println("Error");
+			}
+		}
+}
