@@ -1,0 +1,37 @@
+
+public class Employee  {
+
+	void work() {
+		System.out.println("employee work");
+	}
+}
+
+ class Admin extends Employee {
+	 void work() {
+		 System.out.println("Admin work");
+	 }
+	 
+	 void Inventory() {
+		 
+		 System.out.println("purchased Inventory");
+	 }
+	
+	
+}
+ 
+class Manager extends Employee{
+	
+//	void work() {
+	//	System.out.println("Manager work");
+	//}
+	void ManagePro() {
+		System.out.println("project managed");
+	}
+}
+
+class Trainer extends Employee{
+	void UpSkill() {
+		System.out.println("UUUUUPPPPPP");
+	}
+	
+}
